@@ -1,0 +1,114 @@
+*{
+  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+html::-webkit-scrollbar-track{
+  background: #111;
+}
+html::-webkit-scrollbar-thumb{
+  background: #ff5722;
+  border-radius: 5rem;
+}
+body{
+  overflow-x: hidden;
+}
+section{
+  padding:  3rem 9%;
+}
+.heading {
+text-align: center;
+  margin-bottom: 2rem;
+}
+.heading span {
+  color: #ff5722;
+  font-size: 2rem;
+}
+.heading h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #ff5722;
+  border: 0.5rem solid #ff5722;
+  border-radius: 5rem;
+  cursor: pointer;
+  background:  none;
+  transition: 0.5s;
+  font-weight: bold;
+}
+.btn:hover {
+  background: #ff5722;
+  color: #111;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 9%;
+}
+.header .navbar a {
+    font-size: 1.7rem;
+    color: #aaa;
+    display: inline-block;
+    margin: 0 1rem;
+}
+.header .navbar a:hover {
+    color: #ff5722;
+}
+.header .btn {
+  margin-top: 0;
+}
+.header .navbar{
+  position: absolute;
+  top: 99%;
+  left:0;
+  right: 0;
+  background: #222;
+  //-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+.header .navbar .active {
+  //-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+}
+
+
+.logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+
+}
+.logo i {
+  color: #ff5722;
+  padding-right: 0.5rem;
+}
