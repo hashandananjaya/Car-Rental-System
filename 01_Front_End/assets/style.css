@@ -26,6 +26,7 @@ html::-webkit-scrollbar-thumb{
   border-radius: 5rem;
 }
 body{
+  background: #1a1a1a;
   overflow-x: hidden;
 }
 section{
@@ -86,6 +87,24 @@ text-align: center;
 .header .btn {
   margin-top: 0;
 }
+@media (max-width: 991px) {
+  html{
+    font-size: 55%;
+  }
+  .header {
+    padding: 3rem 2rem;
+  }
+  .section {
+    padding: 3rem 2rem;
+  }
+
+}
+@media (max-width: 768px) {
+  #menu-btn{
+    display: inline-block;
+  }
+
+}
 .header .navbar{
   position: absolute;
   top: 99%;
@@ -100,7 +119,73 @@ text-align: center;
   //-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
 }
+.header .navbar a {
+  margin: 2rem;
+  font-size: 2rem;
+  display: block;
+}
+.home{
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 100%;
+  border-radius: 1rem;
+  background: linear-gradient(rgb(100 100 100 ),
+  rgba(17, 17, 17, 0.7)),
+  url("../assets/img/pexels-taras-kots-9420593.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
 
+}
+.home .content {
+  text-align: center;
+}
+.home .content span{
+  font-weight: bolder;
+  color: #ff5722;
+  -webkit-text-stroke: 0.3rem #fff;
+  font-size: 6vw;
+  display: block;
+}
+.home .content h3 {
+  font-size: 6vw;
+  color: #fff;
+}
+.home .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+.home {
+   margin-top: 10rem;
+ }
+
+.home .content span {
+  font-size: 8vw;
+}
+.home .content h3 {
+  font-size: 9vw;
+}
+
+@media (max-width: 450px) {
+  html{
+    font-size: 50%;
+  }
+  .about .content h3 {
+    font-size: 3.5rem;
+
+  }
+  .banner .content h3 {
+    font-size: 2.7rem;
+  }
+
+}
 
 .logo {
   font-size: 2.5rem;
@@ -111,4 +196,50 @@ text-align: center;
 .logo i {
   color: #ff5722;
   padding-right: 0.5rem;
+}
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+
+}
+.about .img-container {
+    flex: 1 1 42rem;
+}
+.about .img-container img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.about .content {
+  flex: 1 1 42rem;
+  margin-bottom: 5rem;
+}
+.about .content span {
+  color: #ff5722;
+  font-size: 2rem;
+}
+.about .content h3 {
+  color: #fff;
+  font-size: 4rem;
+  margin-top: 0.5rem;
+}
+.about .content p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+.popular .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
