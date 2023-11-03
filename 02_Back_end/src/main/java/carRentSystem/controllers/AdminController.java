@@ -1,6 +1,7 @@
-package carRentSystem.controller;
+package carRentSystem.controllers;
 
 import carRentSystem.dto.AdminDTO;
+import carRentSystem.service.AdminService;
 import carRentSystem.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

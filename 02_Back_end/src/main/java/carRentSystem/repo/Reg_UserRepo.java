@@ -1,7 +1,7 @@
 package carRentSystem.repo;
 
-import com.easy.car_rental.dto.Reg_UserDTO;
-import com.easy.car_rental.entity.Reg_User;
+import carRentSystem.dto.Reg_UserDTO;
+import carRentSystem.entity.Reg_User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

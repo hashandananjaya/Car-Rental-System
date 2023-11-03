@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 
 @EnableWebMvc
-@ComponentScan(basePackages = {"carRentSystem.controller"})
+@ComponentScan(basePackages = {"carRentSystem.controllers"})
 public class WebAppConfig implements WebMvcConfigurer {
     @Bean
     public CommonsMultipartResolver multipartResolver(){

@@ -1,6 +1,12 @@
 package carRentSystem.dto;
 
 
+import carRentSystem.embeded.Name;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -14,5 +20,6 @@ public class AdminDTO {
     private String nic;
 
     private UserDTO user;
+
 
 }

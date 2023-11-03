@@ -1,6 +1,6 @@
 package carRentSystem.repo;
 
-import com.easy.car_rental.entity.Rent;
+import carRentSystem.entity.Rent;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

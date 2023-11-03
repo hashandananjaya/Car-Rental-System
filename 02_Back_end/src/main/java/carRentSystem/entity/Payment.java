@@ -1,4 +1,5 @@
-package carRentSystem.dto;
+package carRentSystem.entity;
+
 
 import carRentSystem.enums.PaymentType;
 import lombok.AllArgsConstructor;
@@ -6,17 +7,22 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
+
 
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
 @Data
-public class PaymentDTO {
-
+@Entity
+public class Payment {
+    @Id
     private String paymentID;
-    private RentDTO rentID;
+    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH})
+    @JoinColumn(name = "rentID", referencedColumnName = "rentID", nullable = false)
+    private Rent rentID;
     private PaymentType paymentType;
     private LocalDate date;
     private LocalTime time;
